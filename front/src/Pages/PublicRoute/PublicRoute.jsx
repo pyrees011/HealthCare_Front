@@ -19,14 +19,14 @@ import { Navigate, Outlet } from "react-router-dom";
 
 const PublicRoute = () => {
   // const { isAuthenticated, user } = useUserContext();
-  // const isAuthenticated = true;
-  // const user = {
-  //   id: 1,
-  //   name: "John Doe",
-  // };
+  const isAuthenticated = true;
+  const user = {
+    id: 1,
+    name: "John Doe",
+  };
 
-  const isAuthenticated = false;
-  const user = null;
+  // const isAuthenticated = false;
+  // const user = null;
 
   return isAuthenticated && user ? (
     <Outlet />
